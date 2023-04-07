@@ -28,7 +28,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: red;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -40,6 +40,7 @@ img {vertical-align: middle;}
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  color: red;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -50,18 +51,19 @@ img {vertical-align: middle;}
 /* Caption text */
 .text {
   color: yellow;
-  font-size: 15px;
+  font-size: 50px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
+  font-weight: bold;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -144,31 +146,19 @@ img {vertical-align: middle;}
 </div>
 
 <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 0;
+showSlides();
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
 

@@ -27,6 +27,6 @@ p.para{
 
 <br><br><br><br>
 <p class="para">&nbsp;I am Khushboo. I am 21 years old and I have completed my btech from Reva University. I started learning java in Feb 2022. </p>
-<center><img src="images/mypic.jpg"  width="300" height="370" align="middle"></center>
+<center><img src="images/pic1.jpeg"  width="300" height="370" align="middle"></center>
 </body>
 </html>
