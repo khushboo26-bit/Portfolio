@@ -118,7 +118,7 @@ img {vertical-align: middle;}
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <a href="project1.html"><img src="images/img1.jpg" style="width:100%"></a>
-  <div class="text">PROJECT 1</div>
+  <div class="text">PROJECT 1: Image Processing</div>
 </div>
 
 <div class="mySlides fade">

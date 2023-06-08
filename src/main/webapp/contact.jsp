@@ -60,6 +60,11 @@ input[type=submit] {
             margin: 20px 20px;
             cursor: pointer;
          }
+         
+input[type=submit]:hover{
+    background-color: #FCB935;
+    color: black;
+}
 </style>
 </head>
 <body>
@@ -81,9 +86,8 @@ input[type=submit] {
 
 <label class="l" for="story">&nbsp;&nbsp;&nbsp;&nbsp;Write your message here:</label><br><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;<textarea class="txt" id="msg" name="msg"
+&nbsp;&nbsp;&nbsp;&nbsp;<textarea class="txt" id="msg" name="msg" placeholder="message..."
           rows="8" cols="48">
-message...
 </textarea><br>&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="submit" value="Submit">
 </form>
